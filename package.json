@@ -1,0 +1,27 @@
+{
+  "name": "ai-toy-cars",
+  "version": "1.0.0",
+  "description": "Cars driven by AI using Neuroevolution",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarKazzaz/ai-toy-cars.git"
+  },
+  "keywords": [
+    "ai",
+    "ml",
+    "ml5",
+    "p5",
+    "node"
+  ],
+  "author": "Bar Kazzaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BarKazzaz/ai-toy-cars/issues"
+  },
+  "homepage": "https://github.com/BarKazzaz/ai-toy-cars#readme"
+}
