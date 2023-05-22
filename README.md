@@ -1,4 +1,4 @@
 # ai-toy-cars
 Cars driven by AI using Neuroevolution
-![alt text](https://imgur.com/VhFVayn)
-![alt text](https://imgur.com/V2WQeWM)
+![alt text](https://i.imgur.com/VhFVayn.png)
+![alt text](https://i.imgur.com/V2WQeWM.png)
