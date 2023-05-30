@@ -6,6 +6,7 @@ const PORT = 8000;
 
 const routesToResourcesMap = {
     '/': 'index.html',
+    '/credits': 'credits.html',
     '/style.css': 'style.css',
     '/sketch.js': 'sketch.js',
     '/Lane.js': 'Lane.js',
@@ -15,6 +16,9 @@ const routesToResourcesMap = {
     '/levels.js': 'levels.js',
     '/images/green.png': 'images/green.png',
     '/images/red_rotated.png': 'images/red_rotated.png',
+    '/favicon.ico': 'images/icon.png',
+    '/LuckiestGuy-Regular.ttf': 'LuckiestGuy-Regular.ttf',
+    '/Roboto-Regular.ttf': 'Roboto-Regular.ttf',
 }
 
 const getContentType = (fileName) => {
@@ -24,6 +28,7 @@ const getContentType = (fileName) => {
         'ico': 'image/x-icon',
         'js': 'text/javascript',
         'css': 'text/css',
+        'ttf': 'font/ttf',
     }
     const mime = fileName.substring(fileName.lastIndexOf('.') + 1);
     return ct[mime];
