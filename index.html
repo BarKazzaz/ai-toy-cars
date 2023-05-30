@@ -2,27 +2,43 @@
 <html lang="en">
 
 <head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
   <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
 </head>
 
-<body>
-  <main>
-  </main>
+<body class='weird-background'>
   <script src="Sensor.js"></script>
   <script src="Car.js"></script>
   <script src="CarBrain.js"></script>
   <script src="Lane.js"></script>
   <script src="levels.js"></script>
   <script src="sketch.js"></script>
-  <div id="information-div">
-    Generation: <span id="gen-num">1</span>
-    Update Speed: <span id="update-speed">1</span>
+
+  <div class="container">
+    <div>
+      <header>
+        <div class="header">
+          <h1>AI Toy Cars</h1>
+          <p>Let cars evolve with each generations</p>
+        </div>
+      </header>
+
+      <div class="flex justify-center">
+        <main></main>
+      </div>
+      <div class="flex justify-center">
+        <div id="information-div">
+          Generation: <span id="gen-num">1</span>
+          Update Speed: <span id="update-speed">1</span>
+        </div>
+      </div>
+    </div>
   </div>
+
 </body>
 
 </html>
