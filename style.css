@@ -1,6 +1,23 @@
+@font-face {
+    font-family: lucky-bar;
+    src: url(LuckiestGuy-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-bar;
+    src: url(Roboto-Regular.ttf);
+}
+
 html, body {
     margin: 0;
     padding: 0;
+}
+
+.weird-background {
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, transparent 80%, transparent) 27.5px 27.5px, linear-gradient(#4d93a3 2.2px, transparent 2.2px) 0 -1.1px, linear-gradient(90deg, #4d93a3 2.2px, rgba(255, 255, 255, 1) 2.2px) -1.1px 0;
+    background-size: 55px 55px, 55px 55px, 27.5px 27.5px, 27.5px 27.5px;
 }
 
 canvas {
@@ -10,4 +27,40 @@ canvas {
 #information-div {
     color: gray;
     font-size: 3rem;
+}
+
+header {
+    text-align: center;
+    color: rgb(255 48 48);
+}
+
+header h1 {
+    font-family: lucky-bar;
+    font-size: 5rem;
+}
+
+header p {
+    font-family: roboto-bar;
+    font-size: 3rem;
+}
+
+.container {
+    /* position the div in center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: rgb(250, 250, 250);
+    width: 75vw;
+    min-width: 900px;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
 }
