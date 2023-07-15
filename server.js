@@ -6,6 +6,9 @@ const PORT = 8000;
 
 const routesToResourcesMap = {
     '/': 'index.html',
+    '/router.js': 'router.js',
+    '/title': 'title.html',
+    '/levels': 'levels.html',
     '/credits': 'credits.html',
     '/style.css': 'style.css',
     '/sketch.js': 'sketch.js',

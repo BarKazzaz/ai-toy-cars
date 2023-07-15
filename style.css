@@ -64,3 +64,16 @@ header p {
 .justify-center {
     justify-content: center;
 }
+.grid {
+    display: grid;
+}
+
+.grid.cols121 {
+    grid-template-columns: '1fr 2fr 1fr';
+}
+
+.grid .col-2 {
+    color: red;
+    grid-column-start: 2;
+    grid-column-end: 3;
+} 

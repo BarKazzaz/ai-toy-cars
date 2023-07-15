@@ -11,18 +11,18 @@
 </head>
 
 <body class='weird-background'>
-  <script src="Sensor.js"></script>
-  <script src="Car.js"></script>
-  <script src="CarBrain.js"></script>
-  <script src="Lane.js"></script>
-  <script src="levels.js"></script>
-  <script src="sketch.js"></script>
-
-  <div class="container">
+  <div id='main-container' class="container">
+    <script src="Sensor.js"></script>
+    <script src="Car.js"></script>
+    <script src="CarBrain.js"></script>
+    <script src="Lane.js"></script>
+    <script src="levels.js"></script>
+    <script src="sketch.js"></script>
+    <script src="router.js"></script>
     <div>
       <header>
         <div class="header">
-          <h1>AI Toy Cars</h1>
+          <h1 id='title'>AI Toy Cars</h1>
           <p>Let cars evolve with each generations</p>
         </div>
       </header>
@@ -36,6 +36,13 @@
           Update Speed: <span id="update-speed">1</span>
         </div>
       </div>
+      <div class='flex justify-center'>
+        <button onclick='Router.switch_elm("title", "title")'>
+             TITLE 
+        </button>
+        <button onclick='Router.switch_elm("main-container", "levels")'>
+            Switch Level
+        </button>
     </div>
   </div>
 
