@@ -7,8 +7,7 @@ class Router {
         xhttp.onload = function () {
             elm.innerHTML = this.responseText;
         }
-
-        xhttp.open("GET", route || 'levels.html', true);
+        xhttp.open("GET", route, true);
         xhttp.send();
     }
 

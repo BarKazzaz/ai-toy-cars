@@ -3,14 +3,16 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = 8000;
+const ROUTES_DIR = 'routes';
 
 const routesToResourcesMap = {
     '/': 'index.html',
-    '/router.js': 'router.js',
     '/title': 'title.html',
     '/levels': 'levels.html',
+    '/create-level': 'create-level.html',
     '/credits': 'credits.html',
     '/style.css': 'style.css',
+    '/router.js': 'router.js',
     '/sketch.js': 'sketch.js',
     '/Lane.js': 'Lane.js',
     '/Car.js': 'Car.js',
@@ -67,7 +69,9 @@ const handleRequest = (req, res) => {
         return sendError(405, "Don't do that please..");
     }
     if (req.url in routesToResourcesMap) {
-        return sendFile(routesToResourcesMap[req.url], req, res);
+        const req_route = routesToResourcesMap[req.url];
+        const resource = req_route.endsWith('html') ? `${ROUTES_DIR}/${req_route}` : req_route;
+        return sendFile(resource, req, res);
     } else {
         return sendError(404, `${req.url} not found..`, req, res);
     }
